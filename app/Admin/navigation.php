@@ -2,6 +2,7 @@
 
 use SleepingOwl\Admin\Navigation\Page;
 
+
 // Default check access logic
 // AdminNavigation::setAccessLogic(function(Page $page) {
 // 	   return auth()->user()->isSuperAdmin();
@@ -23,16 +24,47 @@ use SleepingOwl\Admin\Navigation\Page;
 
 return [
     [
-        'title' => 'Dashboard',
+        'title' => 'Home',
         'icon'  => 'fa fa-dashboard',
         'url'   => route('admin.dashboard'),
     ],
 
-    [
-        'title' => 'Information',
+	[
+        'title' => 'Статті',
         'icon'  => 'fa fa-exclamation-circle',
-        'url'   => route('admin.information'),
+        'url'   => route('admin.articles'),
     ],
+	[
+        'title' => 'Новини',
+        'icon'  => 'fa fa-exclamation-circle',
+        'url'   => route('admin.news'),
+    ],
+	[
+        'title' => 'Керівництво',
+        'icon'  => 'fa fa-exclamation-circle',
+        'url'   => route('admin.bosses'),
+    ],
+	[
+        'title' => 'Матеріали',
+        'icon'  => 'fa fa-exclamation-circle',
+        'url'   => route('admin.math'),
+    ],
+	[
+        'title' => 'Фото',
+        'icon'  => 'fa fa-exclamation-circle',
+        'url'   => route('admin.photo'),
+    ],
+	[
+        'title' => 'Відео',
+        'icon'  => 'fa fa-exclamation-circle',
+        'url'   => route('admin.video'),
+    ],
+	[
+        'title' => 'Мапи',
+        'icon'  => 'fa fa-exclamation-circle',
+        'url'   => route('admin.maps'),
+    ],
+
 
     // Examples
     // [
