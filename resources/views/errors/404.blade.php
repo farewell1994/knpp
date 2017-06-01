@@ -94,33 +94,33 @@
 										<li  class="dropdown">
 										<a class="dropdown-toggle forcursor" data-toggle="dropdown">Про парк<b class="caret"></b></a>
 											<ul class="dropdown-menu">
-												<li><a href="{{ URL::to('creating') }}">Історія створення</a></li>
-												<li><a href="{{ URL::to('fizgeo') }}">Фізико-географічні умови</a></li>
-												<li><a href="{{ URL::to('biodiv') }}">Біорізноманіття</a></li>
-												<li><a href="{{ URL::to('hist-cult') }}">Історико-культурна спадщина</a></li>
+												<li><a href="{{ URL::to('article/creating') }}">Історія створення</a></li>
+												<li><a href="{{ URL::to('article/fizgeo') }}">Фізико-географічні умови</a></li>
+												<li><a href="{{ URL::to('article/biodiv') }}">Біорізноманіття</a></li>
+												<li><a href="{{ URL::to('article/hist-cult') }}">Історико-культурна спадщина</a></li>
 												<li><a href="{{ URL::to('administration') }}">Адміністрація</a></li>
 												<li><a href="{{ URL::to('matherials') }}">Матеріали</a></li>
-												<li><a href="{{ URL::to('help') }}">Допомога</a></li>
+												<li><a href="{{ URL::to('article/help') }}">Допомога</a></li>
 											</ul>
 										</li>
 										<li class="dropdown">
 										<a class="dropdown-toggle forcursor" data-toggle="dropdown">Напрямки діяльності<b class="caret"></b></a>
 											<ul class="dropdown-menu">
-												<li><a href="{{ URL::to('sciense') }}">Науковий</a></li>										
-												<li><a href="{{ URL::to('eco-edu') }}">Еколого-освітній</a></li>
-												<li><a href="{{ URL::to('nat-def') }}">Природоохоронний</a></li>
-												<li><a href="{{ URL::to('recreation') }}">Рекреаційний</a></li>
-												<li><a href="{{ URL::to('reproduction') }}">Відтворення та збереження</a></li>
+												<li><a href="{{ URL::to('article/sciense') }}">Науковий</a></li>										
+												<li><a href="{{ URL::to('article/eco-edu') }}">Еколого-освітній</a></li>
+												<li><a href="{{ URL::to('article/nat-def') }}">Природоохоронний</a></li>
+												<li><a href="{{ URL::to('article/recreation') }}">Рекреаційний</a></li>
+												<li><a href="{{ URL::to('article/reproduction') }}">Відтворення та збереження</a></li>
 											</ul>
 										</li>
 										<li class="dropdown">
 											<a class="dropdown-toggle forcursor" data-toggle="dropdown">Туризм і відпочинок <b class="caret"></b></a>								
 											<ul class="dropdown-menu">
-												<li><a href="{{ URL::to('routes') }}">Туристичні маршрути</a></li>
-												<li><a href="{{ URL::to('eco-paths') }}">Екологічні стежки</a></li>
-												<li><a href="{{ URL::to('interesting') }}">Цікаві об'єкти</a></li>
-												<li><a href="{{ URL::to('rules') }}">Правила поведінки</a></li>
-												<li><a href="{{URL::to('infrastr') }}">Туристична інфраструктура</a></li>
+												<li><a href="{{ URL::to('article/routes') }}">Туристичні маршрути</a></li>
+												<li><a href="{{ URL::to('article/eco-paths') }}">Екологічні стежки</a></li>
+												<li><a href="{{ URL::to('article/interesting') }}">Цікаві об'єкти</a></li>
+												<li><a href="{{ URL::to('article/rules') }}">Правила поведінки</a></li>
+												<li><a href="{{URL::to('article/infrastr') }}">Туристична інфраструктура</a></li>
 											</ul>
 										</li>
 										<li><a href="{{ URL::to('gallery') }}">Галерея</a></li>

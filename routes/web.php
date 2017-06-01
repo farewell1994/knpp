@@ -24,11 +24,6 @@ Route::get('/article/{url}/', ['as' => 'other', 'uses' => 'HomeController@other'
 Route::get('/administration/', 'HomeController@administration');
 Route::get('/matherials/', 'HomeController@materials');
 
-
-Route::get('/routes/', 'HomeController@other');
-Route::get('/eco-paths/', 'HomeController@other');
-Route::get('/interesting/', 'HomeController@other');
-
 Route::get('/contact/', 'ContactController@show');
 
 Route::get('/gallery/', 'GalleryController@photo');

@@ -1,10 +1,5 @@
 @extends('app')
 @section('content')
-<?php
-	if($page == "fauna"){$curPage="Фауна";}
-	elseif($page == "flora"){$curPage="Флора";}
-	else{$curPage="Краєвиди";}
-?>
 <h3>
 	Світлини / <a class="gallerylinks" href="{{URL::to('video')}}">Відео</a>
 </h3>
@@ -17,7 +12,14 @@
 @if(count($photo) != 0) <!--  перевірка чи є фото-->
 <div class="container">
 	<div class="row row_article">
-		<h3>{{$curPage}}</h3>
+		@if($page=='fauna')
+		<h3>Фауна</h3>
+		@elseif($page=='flora')
+		<h3>Флора</h3>
+		@elseif($page=='lands')
+		<h3>Краєвиди</h3>
+		@else
+		@endif
 		<hr>
 		@foreach($photo as $p)
 		<div class="col-md-3 col-sm-4 col-xs-6 thumb">
