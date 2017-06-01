@@ -15,10 +15,9 @@ class HomeController extends Controller
 		return view('index', ['article' => $mainArticle]); // передаємо змінну в view
 	}
 
-    public function other(){
-		$arr = explode('/', $_SERVER['REQUEST_URI']);
-		$cur = array_pop($arr);//з адреси беремо назву для статті
-		$needArticle = Article::select('title', 'text', 'links')->where('url', '=', $cur)->first();
+    public function other($url){
+
+		$needArticle = Article::select('title', 'text', 'links')->where('url', '=', $url)->firstOrFail();
 		//dd($needArticle); //перевірка. що отримаєм
 		return view('article', ['article' => $needArticle]); // передаємо змінну в view
 	}

@@ -19,18 +19,7 @@ Route::get('/', function () {
 Route::get('/', function () { return redirect('/index/'); });
 Route::get('/index', 'HomeController@main');
 
-Route::get('/creating/', 'HomeController@other');
-Route::get('/fizgeo/', 'HomeController@other');
-Route::get('/biodiv/', 'HomeController@other');
-Route::get('/hist-cult/', 'HomeController@other');
-Route::get('/help/', 'HomeController@other');
-Route::get('/sciense/', 'HomeController@other');
-Route::get('/eco-edu/', 'HomeController@other');
-Route::get('/nat-def/', 'HomeController@other');
-Route::get('/recreation/', 'HomeController@other');
-Route::get('/reproduction/', 'HomeController@other');
-Route::get('/rules/', 'HomeController@other');
-Route::get('/infrastr/', 'HomeController@other');
+Route::get('/article/{url}/', ['as' => 'other', 'uses' => 'HomeController@other']);
 
 Route::get('/administration/', 'HomeController@administration');
 Route::get('/matherials/', 'HomeController@materials');
