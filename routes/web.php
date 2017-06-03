@@ -21,8 +21,8 @@ Route::get('/index', 'HomeController@main');
 
 Route::get('/article/{url}/', ['as' => 'other', 'uses' => 'HomeController@other']);
 
-Route::get('/administration/', 'HomeController@administration');
-Route::get('/matherials/', 'HomeController@materials');
+Route::get('/administration/', 'BossController@administration');
+Route::get('/matherials/', 'MathController@materials');
 
 Route::get('/contact/', 'ContactController@show');
 
