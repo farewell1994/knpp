@@ -22,7 +22,19 @@ use SleepingOwl\Admin\Navigation\Page;
 //
 // AdminSection::addMenuPage(\App\User::class)
 
+    AdminSection::addMenuPage(\App\News::class)->setIcon('fa fa-file-text-o');
+    AdminSection::addMenuPage(\App\Matherial::class)->setIcon('fa fa-file-text-o');
+    AdminSection::addMenuPage(\App\Photo::class)->setIcon('fa fa-file-text-o');
+    AdminSection::addMenuPage(\App\Article::class)->setIcon('fa fa-file-text-o');
+	AdminSection::addMenuPage(\App\Video::class)->setIcon('fa fa-file-text-o');
+	AdminSection::addMenuPage(\App\Map::class)->setIcon('fa fa-file-text-o');
+	AdminSection::addMenuPage(\App\Boss::class)->setIcon('fa fa-file-text-o');
 return [
+    /*[
+        'title' => 'Dashboard',
+        'icon'  => 'fa fa-dashboard',
+        'url'   => route('admin.dashboard'),
+    ],
     [
         'title' => 'Home',
         'icon'  => 'fa fa-dashboard',
@@ -33,9 +45,9 @@ return [
         'title' => 'Статті',
         'icon'  => 'fa fa-exclamation-circle',
         'url'   => route('admin.articles'),
-    ],
+    ], 
 	[
-        'title' => 'Новини',
+      'title' => 'Новини',
         'icon'  => 'fa fa-exclamation-circle',
         'url'   => route('admin.news'),
     ],
@@ -92,7 +104,7 @@ return [
     //        ]),
     //
     //        // or
-    //        (new Page(/* ... */))->setPages(function (Page $page) {
+    //        (new Page(/* ... *///))->setPages(function (Page $page) {
     //            $page->addPage([
     //                'title'    => 'Blog',
     //                'priority' => 100,

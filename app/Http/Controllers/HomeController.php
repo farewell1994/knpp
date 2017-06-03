@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Article; // прописали модель, щоб її викорситовувати
+use App\Matherial;
+use App\Boss;
 
 class HomeController extends Controller
 {
@@ -18,5 +20,16 @@ class HomeController extends Controller
 		$needArticle = Article::select('title', 'text', 'links')->where('url', '=', $url)->firstOrFail();
 		//dd($needArticle); //перевірка. що отримаєм
 		return view('article', ['article' => $needArticle]); // передаємо змінну в view
-	} //
+	}
+	
+	public function materials(){
+		$maths = Matherial::select('title', 'link')->orderBy('id', 'DESC')->get();
+		return view('matherials', ['maths' => $maths]);
+	}
+	
+	public function administration(){
+		//return view('adms');
+		$boss = Boss::select('position', 'fio', 'photo')->get();
+		return view('boss', ['boss'=> $boss]);
+	}
 }
