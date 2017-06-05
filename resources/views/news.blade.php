@@ -12,10 +12,9 @@
 					<img src="{{$f->small_img}}" alt='Ooops... Зображення не завантажилось' >
 						<div class="caption">
 							<h4>{{$f->title}}</h4>
-							<p align="justify">{{mb_substr($f->content,0,200)}}
+							<p align="justify">{!! mb_substr($f->content,0,200) !!}</p>
 								</br>					
 								<a href="{{URL::to('news/'.$f->url)}}" target="_blanc">Читати далі...</a>
-							</p>
 						</div>
 				</div>
 			</div>

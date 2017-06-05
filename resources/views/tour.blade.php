@@ -6,7 +6,7 @@
 		<div class="article">
 			<h3 class="titleh3" align="center">{{$tour->title}}</h3>
 			<hr>
-			{{$tour->map}}
+			{!!$tour->map!!}
 		</div>
 		<div class="row">
 			<?php $imgs = explode('*',$tour->links);?>

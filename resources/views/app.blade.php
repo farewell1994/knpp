@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -14,7 +14,6 @@
 		<meta name="copyright" content="Всі права належать НПП Цуманська пуща">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
 		<link rel='stylesheet' href="{{URL::asset('asset/bootstrap/css/bootstrap.min1.css')}}" type='text/css' media='all'>
 		<link rel='stylesheet' href="{{URL::asset('asset/css/styles.css')}}" type='text/css' media='all'>
 		<script src="https://code.jquery.com/jquery.min.js"></script>

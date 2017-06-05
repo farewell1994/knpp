@@ -5,7 +5,7 @@
 	<div class="rowcontent">
 		<div class="article">
 			<h3 class="titleh3" align="center">{{$article->title}}</h3>
-			<p align="justify">{{$article->text}}</p>
+			<p align="justify">{!!$article->text!!}</p>
 		</div>
 		<div class="row">
 			<?php $imgs = explode('*',$article->links);?>
