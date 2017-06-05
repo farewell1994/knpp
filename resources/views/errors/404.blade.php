@@ -27,8 +27,8 @@
 			<header>
 				<div class="row">
 					<div class="col-md-9 logo">
-						<a href="{{ URL::to('index') }}" class="hidden-xs hidden-sm"><img class="mob_img" src="{{ URL::asset('asset/images/logo2.jpg')}}"></a>
-						<a href="{{ URL::to('index') }}" class="hidden-md hidden-lg"><img src="{{ URL::asset('asset/images/mob.jpg')}}"></a>
+						<a href="{{ URL::to('home') }}" class="hidden-xs hidden-sm"><img class="mob_img" src="{{ URL::asset('asset/images/logo2.jpg')}}"></a>
+						<a href="{{ URL::to('home') }}" class="hidden-md hidden-lg"><img src="{{ URL::asset('asset/images/mob.jpg')}}"></a>
 					</div>
 					<div class="col-md-3">
 						<div class="row">
@@ -89,7 +89,7 @@
 							<nav class="collapse navbar-collapse" role="navigation">
 								<div class="menu1">
 									<ul  class="nav navbar-nav"> 
-										<li><a href="{{ URL::to('index') }}">Головна</a></li>
+										<li><a href="{{ URL::to('home') }}">Головна</a></li>
 										<li><a href="{{ URL::to('news') }}">Новини</a></li>
 										<li  class="dropdown">
 										<a class="dropdown-toggle forcursor" data-toggle="dropdown">Про парк<b class="caret"></b></a>
@@ -106,7 +106,7 @@
 										<li class="dropdown">
 										<a class="dropdown-toggle forcursor" data-toggle="dropdown">Напрямки діяльності<b class="caret"></b></a>
 											<ul class="dropdown-menu">
-												<li><a href="{{ URL::to('article/sciense') }}">Науковий</a></li>										
+												<li><a href="{{ URL::to('article/science') }}">Науковий</a></li>										
 												<li><a href="{{ URL::to('article/eco-edu') }}">Еколого-освітній</a></li>
 												<li><a href="{{ URL::to('article/nat-def') }}">Природоохоронний</a></li>
 												<li><a href="{{ URL::to('article/recreation') }}">Рекреаційний</a></li>
@@ -147,7 +147,7 @@
 			<div class="container confoot">
 				<div class="col-sm-12">
 					<div class="col-sm-6" align="center">
-						<a href="{{ URL::to('index') }}">Головна</a> | <a href="{{ URL::to('contact') }}">Контакти</a>    
+						<a href="{{ URL::to('home') }}">Головна</a> | <a href="{{ URL::to('contact') }}">Контакти</a>    
 					</div>
 					<div class="col-sm-6" align="center">
 						<p>© {{date("Y")}} НПП "Цуманська пуща". All rights reserved</p>

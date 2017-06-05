@@ -32,7 +32,7 @@ AdminSection::registerModel(Video::class, function (ModelConfiguration $model) {
     // Create And Edit
 		$model->onCreateAndEdit(function() {
         $form = AdminForm::panel()->addBody(
-			AdminFormElement::text('link', 'URL адреса')->required(),
+			AdminFormElement::text('link', 'URL адреса відео з Youtube. Остання частина, наприклад, gDu8ZPSHums')->required(),
             AdminFormElement::text('name', 'Назва')->required()
         );
         return $form;

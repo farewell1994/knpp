@@ -21,6 +21,8 @@
 				@endif
 				@endforeach
 			</div>
+			<br>
+			<br>
 			<div class=row">
 				<p align="center">
 					<br>

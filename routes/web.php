@@ -16,10 +16,10 @@ Route::get('/', function () {
 });*/
 
 //для index (main action)  для інших статей (other action)
-Route::get('/', function () { return redirect('/index/'); });
-Route::get('/index', 'HomeController@main');
+Route::get('/', function () { return redirect('/home/'); });
+Route::get('/home', 'ArticleController@main');
 
-Route::get('/article/{url}/', ['as' => 'other', 'uses' => 'HomeController@other']);
+Route::get('/article/{url}/', ['as' => 'other', 'uses' => 'ArticleController@other']);
 
 Route::get('/administration/', 'BossController@administration');
 Route::get('/matherials/', 'MathController@materials');

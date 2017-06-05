@@ -1,15 +1,15 @@
 @extends('app')
 @section('content')
 @if($new!=null) <!--  перевірка чи є новина-->
-<div class="container" align="center">
+<div class="container">
 	<div class="rowcontent">
 		<div class="article">
 			<h3 class="newtitle" align="center">{{$new->title}}</h3>
-			<p align="justify">{{$new->content}}</p>
+			<p align="justify">{!!$new->content!!}</p>
 		</div>
 		<div class="row">
 			<?php $imgs = explode('*',$new->links);?>
-			@if(!empty($imgs))
+			@if($imgs[0]!=null)
 			@foreach($imgs as $img)
 			<div class="col-xs-12 col-md-3 col-sm-6 thumb">
 				<a class="fancyimage" rel="group" href="{{$img}}">

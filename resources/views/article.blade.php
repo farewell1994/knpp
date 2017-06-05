@@ -9,7 +9,7 @@
 		</div>
 		<div class="row">
 			<?php $imgs = explode('*',$article->links);?>
-			@if(!empty($imgs))
+			@if($imgs[0]!=null)
 			@foreach($imgs as $img)
 			<div class="col-xs-12 col-md-3 col-sm-6 thumb">
 				<a class="fancyimage" rel="group" href="{{$img}}">

@@ -31,7 +31,8 @@ AdminSection::registerModel(News::class, function (ModelConfiguration $model) {
     // Create And Edit
 		$model->onCreateAndEdit(function() {
         $form = AdminForm::panel()->addBody(
-			AdminFormElement::text('url', 'URL адреса (латиницею)')->required()->unique(),
+			AdminFormElement::text('url', 'URL адреса (латиницею), зазвичай дублює заголовок')->required()->unique(),
+			AdminFormElement::text('description', 'Короткий опис новини')->required(),
             AdminFormElement::text('title', 'Заголовок')->required(),
             AdminFormElement::ckeditor('content', 'Вміст')->required(),
             AdminFormElement::text('small_img', 'Фото для представлення новини')->required(),

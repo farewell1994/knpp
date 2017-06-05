@@ -10,7 +10,7 @@ class GalleryController extends Controller
 {
     //
 	public function photo(){
-		$photo = Photo::select('capture','link','dif')->where('dif', '=', 'fauna')->get();
+		$photo = Photo::select('capture','link','dif')->where('dif', '=', 'fauna')->orderBy('id', 'DESC')->get();
 		return view('photo', ['photo'=> $photo, "page" => "fauna"]);
 	}
 	public function video(){
@@ -18,7 +18,7 @@ class GalleryController extends Controller
 		return view('video', ['video'=> $video]);
 	}
 	public function photoDif($url){
-		$photo = Photo::select('capture','link','dif')->where('dif', '=', $url)->get();
+		$photo = Photo::select('capture','link','dif')->where('dif', '=', $url)->orderBy('id', 'DESC')->get();
 		return view('photo', ['photo'=> $photo, 'page' => $url]);
 	}
 }
