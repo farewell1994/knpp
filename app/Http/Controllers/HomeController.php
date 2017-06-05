@@ -3,20 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Article; // прописали модель, щоб її викорситовувати
 
 class HomeController extends Controller
 {
-    public function main(){
-		$mainArticle = Article::select('title', 'text', 'links')->where('url', '=', 'index')->orderBy('id', 'DESC')->first(); //отримуємо перший запис с найбільшим id
-		//$article = Article::all(); // отримуємо всі записи
-		return view('index', ['article' => $mainArticle]); // передаємо змінну в view
-	}
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
-    public function other($url){
-
-		$needArticle = Article::select('title', 'text', 'links')->where('url', '=', $url)->firstOrFail();
-		//dd($needArticle); //перевірка. що отримаєм
-		return view('article', ['article' => $needArticle]); // передаємо змінну в view
-	}//
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        return view('home');
+    }
 }

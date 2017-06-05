@@ -8,7 +8,7 @@ use App\Article; // прописали модель, щоб її викорси�
 class ArticleController extends Controller
 {
     public function main(){
-		$mainArticle = Article::select('title', 'text', 'links')->where('url', '=', 'home')->orderBy('id', 'DESC')->first(); //отримуємо перший запис с найбільшим id
+		$mainArticle = Article::select('title', 'text', 'links')->where('url', '=', 'index')->orderBy('id', 'DESC')->first(); //отримуємо перший запис с найбільшим id
 		//$article = Article::all(); // отримуємо всі записи
 		return view('index', ['article' => $mainArticle]); // передаємо змінну в view
 	}

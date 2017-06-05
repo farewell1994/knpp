@@ -16,8 +16,8 @@ Route::get('/', function () {
 });*/
 
 //для index (main action)  для інших статей (other action)
-Route::get('/', function () { return redirect('/home/'); });
-Route::get('/home', 'ArticleController@main');
+Route::get('/', function () { return redirect('/index/'); });
+Route::get('/index', 'ArticleController@main');
 
 Route::get('/article/{url}/', ['as' => 'other', 'uses' => 'ArticleController@other']);
 
@@ -35,3 +35,7 @@ Route::get('/news/{url}/', ['as' => 'pageNews', 'uses' => 'NewsController@pageNe
 
 Route::get('/view/{url}/', ['as' => 'show', 'uses' => 'ViewController@show']);
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

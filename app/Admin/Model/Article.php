@@ -31,7 +31,7 @@ AdminSection::registerModel(Article::class, function (ModelConfiguration $model)
     // Create And Edit
 		$model->onCreateAndEdit(function() {
         $form = AdminForm::panel()->addBody(
-			AdminFormElement::text('url', 'URL адреса (латиницею), наприклад home, або creating')->required(),
+			AdminFormElement::text('url', 'URL адреса (латиницею), наприклад index, або creating')->required(),
             AdminFormElement::text('title', 'Заголовок')->required(),
             AdminFormElement::ckeditor('text', 'Вміст')->required(),
 			AdminFormElement::text('links', 'Посилання на фото (розділяти символом *). Наприклад: image1.jpg*image2.jpg*image3.jpg')
