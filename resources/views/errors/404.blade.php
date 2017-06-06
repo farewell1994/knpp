@@ -57,7 +57,7 @@
 								</ul>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-								<form class="navbar-form" role="search">
+								<!-- <form class="navbar-form" role="search">
 									<div class="input-group">
 										<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'http://knpp.com.ua/search.php','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Пошук по knpp.com.ua','suggest':true,'target':'_self','tld':'ru','type':3,'usebigdictionary':true,'searchid':2289166,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'Пошук по сайту','input_placeholderColor':'#000000','input_borderColor':'#d1d983'}">
 											<form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8">
@@ -69,7 +69,7 @@
 											</form>
 										</div>
 									</div>
-								</form>
+								</form> -->
 							</div>
 						</div>
 					</div>

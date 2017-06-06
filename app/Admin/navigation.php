@@ -29,53 +29,14 @@ use SleepingOwl\Admin\Navigation\Page;
 	AdminSection::addMenuPage(\App\Video::class)->setIcon('fa fa-file-text-o');
 	AdminSection::addMenuPage(\App\Map::class)->setIcon('fa fa-file-text-o');
 	AdminSection::addMenuPage(\App\Boss::class)->setIcon('fa fa-file-text-o');
+	
 return [
-    /*[
-        'title' => 'Dashboard',
-        'icon'  => 'fa fa-dashboard',
-        'url'   => route('admin.dashboard'),
-    ],
     [
-        'title' => 'Home',
-        'icon'  => 'fa fa-dashboard',
-        'url'   => route('admin.dashboard'),
-    ],
-
-	[
-        'title' => 'Статті',
+        'title' => 'Вихід',
         'icon'  => 'fa fa-exclamation-circle',
-        'url'   => route('admin.articles'),
-    ], 
-	[
-      'title' => 'Новини',
-        'icon'  => 'fa fa-exclamation-circle',
-        'url'   => route('admin.news'),
+        'url'   => route('admin.exit'),
     ],
-	[
-        'title' => 'Керівництво',
-        'icon'  => 'fa fa-exclamation-circle',
-        'url'   => route('admin.bosses'),
-    ],
-	[
-        'title' => 'Матеріали',
-        'icon'  => 'fa fa-exclamation-circle',
-        'url'   => route('admin.math'),
-    ],
-	[
-        'title' => 'Фото',
-        'icon'  => 'fa fa-exclamation-circle',
-        'url'   => route('admin.photo'),
-    ],
-	[
-        'title' => 'Відео',
-        'icon'  => 'fa fa-exclamation-circle',
-        'url'   => route('admin.video'),
-    ],
-	[
-        'title' => 'Мапи',
-        'icon'  => 'fa fa-exclamation-circle',
-        'url'   => route('admin.maps'),
-    ],
+	
 
 
     // Examples

@@ -39,3 +39,5 @@ Route::get('/view/{url}/', ['as' => 'show', 'uses' => 'ViewController@show']);
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/register',  function () { return view('errors/404'); });
