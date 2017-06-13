@@ -2,11 +2,12 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use SleepingOwl\Models\SleepingOwlModel;
 
-class Photo extends Model
+class Photo extends SleepingOwlModel
 {
     //
 	protected $table = 'photos';
 	public $timestamps = false;
+	protected $fillable = ['id', 'capture', 'link', 'dif'];
 }

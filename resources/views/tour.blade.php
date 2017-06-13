@@ -4,9 +4,13 @@
 <div class="container" align="justify">
 	<div class="rowcontent">
 		<div class="article">
+			<br>
 			<h3 class="titleh3" align="center">{{$tour->title}}</h3>
 			<hr>
+			<p align="justify">{!!$tour->text!!}</p>
+			<br>
 			{!!$tour->map!!}
+			<br>
 		</div>
 		<div class="row">
 			<?php $imgs = explode('*',$tour->links);?>
@@ -26,7 +30,9 @@
 <div class="container" align="center">
 	<div class="rowcontent">
 		<div class="article">
+			<br>
 			<h3>Контент тимчасово відсутній</h3>
+			<br>
 		</div>
 	</div>
 </div>

@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Article; // прописали модель, щоб її викорситовувати
 
@@ -15,7 +14,7 @@ class ArticleController extends Controller
 
     public function other($url){
 
-		$needArticle = Article::select('title', 'text', 'links')->where('url', '=', $url)->firstOrFail();
+		$needArticle = Article::select('title', 'text', 'links')->where('url', '=', $url)->first();
 		//dd($needArticle); //перевірка. що отримаєм
 		return view('article', ['article' => $needArticle]); // передаємо змінну в view
 	}//

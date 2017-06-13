@@ -203,11 +203,9 @@ header{
 	object-fit:cover;
 }
 .article{
-	white-space:pre-wrap;
 }
 .article p{
 	font-size:16px;
-	white-space:pre-wrap;
 	}
 .active img{
 	width:100%;
@@ -238,9 +236,6 @@ header{
 .youtube{
 	padding-left: 15%; 
 	padding-bottom: 20px;
-}
-.titleh3{
-	margin-bottom:-15px;
 }
 .img-responsive{
 	height:200px; 
@@ -285,4 +280,15 @@ header{
 	background: url('asset/images/back.jpg');
 	background-size: 100%;
 	height:100%;
+}
+.item img{
+	width: 100%;
+	height:100%;
+}
+.active img{
+	width: 100%;
+	height:100%;
+}
+.search-form{
+	margin-bottom:10px;
 }

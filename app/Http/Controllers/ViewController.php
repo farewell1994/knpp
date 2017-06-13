@@ -10,7 +10,7 @@ class ViewController extends Controller
 {
     //
 	public function show($url){
-		$tour = Map::select('title', 'map','links')->where('url', '=', $url)->first();
+		$tour = Map::select('title', 'text', 'map','links')->where('url', '=', $url)->first();
 		return view('tour', ['tour' => $tour]);
 	}
 

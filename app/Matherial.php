@@ -2,11 +2,12 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use SleepingOwl\Models\SleepingOwlModel;
 
-class Matherial extends Model
+class Matherial extends SleepingOwlModel
 {
     //
 	protected $table = 'matherials';
 	public $timestamps = false;
+	protected $fillable = ['id', 'link', 'title'];
 }

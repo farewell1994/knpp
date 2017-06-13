@@ -2,11 +2,12 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use SleepingOwl\Models\SleepingOwlModel;
 
-class Boss extends Model
+class Boss extends SleepingOwlModel
 {
     //
 	protected $table = 'bosses';
 	public $timestamps = false;
+	protected $fillable = ['id', 'position', 'fio', 'photo'];
 }

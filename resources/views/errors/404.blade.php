@@ -27,8 +27,8 @@
 			<header>
 				<div class="row">
 					<div class="col-md-9 logo">
-						<a href="{{ URL::to('index') }}" class="hidden-xs hidden-sm"><img class="mob_img" src="{{ URL::asset('asset/images/logo2.jpg')}}"></a>
-						<a href="{{ URL::to('index') }}" class="hidden-md hidden-lg"><img src="{{ URL::asset('asset/images/mob.jpg')}}"></a>
+						<a href="{{ URL::to('home') }}" class="hidden-xs hidden-sm"><img class="mob_img" src="{{ URL::asset('asset/images/logo2.jpg')}}"></a>
+						<a href="{{ URL::to('home') }}" class="hidden-md hidden-lg"><img src="{{ URL::asset('asset/images/mob.jpg')}}"></a>
 					</div>
 					<div class="col-md-3">
 						<div class="row">
@@ -56,20 +56,10 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-								<!-- <form class="navbar-form" role="search">
-									<div class="input-group">
-										<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'http://knpp.com.ua/search.php','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Пошук по knpp.com.ua','suggest':true,'target':'_self','tld':'ru','type':3,'usebigdictionary':true,'searchid':2289166,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'Пошук по сайту','input_placeholderColor':'#000000','input_borderColor':'#d1d983'}">
-											<form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8">
-												<input type="hidden" name="searchid" value="2289166"/>
-												<input type="hidden" name="l10n" value="ru"/>
-												<input type="hidden" name="reqenc" value=""/>
-												<input type="search" name="text" value=""/>
-												<input type="submit" value="Знайти"/>
-											</form>
-										</div>
-									</div>
-								</form> -->
+							<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 input-group search-form">
+                                {!! Form::open(array('method' => 'get', 'route' => 'search')) !!}
+                                    {!! Form::text('search', null, array('class' => 'form-control searchform', 'autocomplete' => "off", 'placeholder' => 'Пошук. Введіть та натисніть Enter')) !!}
+                                {!! Form::close() !!}
 							</div>
 						</div>
 					</div>
@@ -89,7 +79,7 @@
 							<nav class="collapse navbar-collapse" role="navigation">
 								<div class="menu1">
 									<ul  class="nav navbar-nav"> 
-										<li><a href="{{ URL::to('index') }}">Головна</a></li>
+										<li><a href="{{ URL::to('home') }}">Головна</a></li>
 										<li><a href="{{ URL::to('news') }}">Новини</a></li>
 										<li  class="dropdown">
 										<a class="dropdown-toggle forcursor" data-toggle="dropdown">Про парк<b class="caret"></b></a>
@@ -136,9 +126,11 @@
 		<!--контент сторінки-->  
 			<div class="error container">
 				<div class="row row_article">
+					 <br>
 					 <h1 align="center" ><font color="green">404 Page not found</font></h1>
 					 </br>
 					 <h3>Сторінка видалена, переміщена, або ще не створена.</h3>
+					 <br>
 				</div>
 			</div>
 		</div>
@@ -147,7 +139,7 @@
 			<div class="container confoot">
 				<div class="col-sm-12">
 					<div class="col-sm-6" align="center">
-						<a href="{{ URL::to('index') }}">Головна</a> | <a href="{{ URL::to('contact') }}">Контакти</a>    
+						<a href="{{ URL::to('home') }}">Головна</a> | <a href="{{ URL::to('contact') }}">Контакти</a>    
 					</div>
 					<div class="col-sm-6" align="center">
 						<p>© {{date("Y")}} НПП "Цуманська пуща". All rights reserved</p>

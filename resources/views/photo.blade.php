@@ -39,7 +39,9 @@
 <div class="container" align="center">
 	<div class="rowcontent">
 		<div class="article">
+			<br>
 			<h3>Фото тимчасово відсутні</h3>
+			<br>
 		</div>
 	</div>
 </div>

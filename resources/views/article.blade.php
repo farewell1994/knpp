@@ -4,8 +4,11 @@
 <div class="container" align="justify">
 	<div class="rowcontent">
 		<div class="article">
+			<br>
 			<h3 class="titleh3" align="center">{{$article->title}}</h3>
+			<hr>
 			<p align="justify">{!!$article->text!!}</p>
+			<br>
 		</div>
 		<div class="row">
 			<?php $imgs = explode('*',$article->links);?>
@@ -27,7 +30,9 @@
 <div class="container" align="center">
 	<div class="rowcontent">
 		<div class="article">
+			<br>
 			<h3>Контент тимчасово відсутній</h3>
+			<br>
 		</div>
 	</div>
 

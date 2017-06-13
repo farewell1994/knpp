@@ -2,11 +2,12 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use SleepingOwl\Models\SleepingOwlModel;
 
-class Article extends Model
+class Article extends SleepingOwlModel
 {
     //
 	protected $table = 'articles';
 	public $timestamps = false;
+	protected $fillable = ['id', 'url', 'title', 'text', 'links'];
 }

@@ -19,7 +19,9 @@
 <div class="container" align="center">
 	<div class="rowcontent">
 		<div class="article">
+			<br>
 			<h3>Матеріали тимчасово відсутні</h3>
+			<br>
 		</div>
 	</div>
 </div>

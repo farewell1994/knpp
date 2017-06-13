@@ -12,7 +12,7 @@
 					<img src="{{$f->small_img}}" alt='Ooops... Зображення не завантажилось' >
 						<div class="caption">
 							<h4 align="center">{{$f->title}}</h4>
-							<p>{{$f->description}}</p>					
+							<p>{{mb_substr($f->description, 0, 215)}}</p>					
 							<a href="{{URL::to('news/'.$f->url)}}" target="_blanc">Читати далі...</a>
 						</div>
 				</div>
@@ -30,7 +30,9 @@
 <div class="container" align="center">
 	<div class="rowcontent">
 		<div class="article">
+			<br>
 			<h3>Новини тимчасово відсутні</h3>
+			<br>
 		</div>
 	</div>
 </div>

@@ -2,11 +2,12 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use SleepingOwl\Models\SleepingOwlModel;
 
-class Video extends Model
+class Video extends SleepingOwlModel
 {
 	protected $table = 'videos';
+	protected $fillable = ['id', 'link', 'name'];
 	public $timestamps = false;
     //
 }

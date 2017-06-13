@@ -4,8 +4,11 @@
 <div class="container">
 	<div class="rowcontent">
 		<div class="article">
+			<br>
 			<h3 class="newtitle" align="center">{{$new->title}}</h3>
+			<hr>
 			<p align="justify">{!!$new->content!!}</p>
+			<br>
 		</div>
 		<div class="row">
 			<?php $imgs = explode('*',$new->links);?>
@@ -25,7 +28,9 @@
 <div class="container" align="center">
 	<div class="rowcontent">
 		<div class="article">
+			<br>
 			<h3>Новину не знайдено</h3>
+			<br>
 		</div>
 	</div>
 </div>
