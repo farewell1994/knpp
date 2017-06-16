@@ -7,11 +7,11 @@
 @endif
 @stop
 @section('content')
+@if($tour!=null) <!--  перевірка чи є така стаття-->
 <?php 
 $imgs = explode('*',$tour->links);
 $map = str_replace('width="600" height="450" frameborder="0" style="border:0"', 'width="100%" height="550px" frameborder="0" style="border:1px solid green"', $tour->map);
 ?>
-@if($tour!=null) <!--  перевірка чи є така стаття-->
 <div class="container" align="justify">
 	<div class="rowcontent">
 		<div class="article">
