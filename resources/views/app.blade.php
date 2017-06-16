@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<meta name="yandex-verification" content="5916f15b5c088a8f" />
 		<title>Національний природний парк "Цуманська пуща"</title>
 		<meta name="title" content="Національний природний парк Цуманська пуща">
 		<meta name="description" content="«Цуманська пуща - національний природний парк в Україні. Розташований у межах Ківерцівського району Волинської області, 
@@ -146,7 +145,5 @@
 	</body>
 </html>
 
-<script type="text/javascript" src="{{URL::asset('asset/js/yandex.js')}}"></script>  
 <script type="text/javascript" src="{{URL::asset('asset/gallery1/fancybox/jquery.fancybox.pack.js')}}"></script> 
 <script type="text/javascript" src="{{URL::asset('asset/js/fancybox.js')}}"></script>
-<script type="text/javascript" src="{{URL::asset('asset/js/yandex2.js')}}"></script>

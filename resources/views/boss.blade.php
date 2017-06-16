@@ -13,7 +13,7 @@
 				<div class="adm col-sm-6 col-xs-12">
 					<div class="as">
 						<img src="{{$b->photo}}"  style="" alt="Ooops... Зображення не завантажилось">
-						<div class="namef">
+						<div class="nameadm">
 							<p align="center"><b>{{$b->position}}</b><br><u>{{$b->fio}}</u></p>
 						</div>
 					</div>
