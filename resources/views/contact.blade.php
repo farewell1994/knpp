@@ -1,4 +1,7 @@
 @extends('app')
+@section('title')
+<title>Контакти | Національний природний парк Цуманська пуща</title>
+@stop
 @section('content')
 <div class="container" align="justify">
 	<h1 align="center">Контакти</h1>

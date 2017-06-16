@@ -1,4 +1,7 @@
 @extends('app')
+@section('title')
+<title>Матеріали | Національний природний парк Цуманська пуща</title>
+@stop
 @section('content')
 @if(count($maths) != 0) <!--  перевірка чи є матеріали-->
 <div class="container" align="justify">

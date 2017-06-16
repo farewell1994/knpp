@@ -1,4 +1,7 @@
 @extends('app')
+@section('title')
+<title>Національний природний парк Цуманська пуща</title>
+@stop
 @section('content')
 <!--slider-->
 <div id="carousel" class="carousel slide" data-interval="0" align="center">

@@ -1,4 +1,11 @@
 @extends('app')
+@section('title')
+@if(!empty($tour->title))
+<title>{{$tour->title}}</title>
+@else
+<title>Національний природний парк "Цуманська пуща"</title>
+@endif
+@stop
 @section('content')
 @if($tour!=null) <!--  перевірка чи є така стаття-->
 <div class="container" align="justify">
@@ -14,7 +21,7 @@
 		</div>
 		<div class="row">
 			<?php $imgs = explode('*',$tour->links);?>
-			@if(empty($imgs)==false)
+			@if($imgs[0]!=null)
 			@foreach($imgs as $img)
 			<div class="col-xs-12 col-md-3 col-sm-6 thumb">
 				<a class="fancyimage" rel="group" href="{{$img}}">

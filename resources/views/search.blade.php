@@ -1,4 +1,7 @@
 @extends('app')
+@section('title')
+<title>Пошук | Національний природний парк Цуманська пуща</title>
+@stop
 @section('content')
 <div class="container" align="justify">
 	<div class = "rowcontent">

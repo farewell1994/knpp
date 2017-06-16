@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<title>Національний природний парк "Цуманська пуща"</title>
-		<meta name="title" content="Національний природний парк Цуманська пуща">
+		<link rel="icon" type="image/x-icon" href="../favicon.ico">
+		@yield('title')
+		<meta name="title" content="Національний природний парк Цуманська пуща"/>
 		<meta name="description" content="«Цуманська пуща - національний природний парк в Україні. Розташований у межах Ківерцівського району Волинської області, 
 		на території однойменного лісового масиву поблизу смт Цумань, в межиріччі Стиру та Горині.">
 		<meta name="keywords" content="Волинь, національний, природний, парк, Ківерці, Цумань, зубр, природа" />

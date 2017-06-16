@@ -1,4 +1,7 @@
 @extends('app')
+@section('title')
+<title>Відео | Національний природний парк "Цуманська пуща"</title>
+@stop
 @section('content')
 <h3>
 	<a class="gallerylinks" href="{{URL::to('gallery')}}">Світлини / </a>Відео

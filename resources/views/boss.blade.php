@@ -1,4 +1,7 @@
 @extends('app')
+@section('title')
+<title>Керівництво | Національний природний парк Цуманська пуща</title>
+@stop
 @section('content')
 @if(count($boss) != 0) <!--  перевірка чи є інфа-->
 <div class="container" align="center">

@@ -1,4 +1,7 @@
 @extends('app')
+@section('title')
+<title>Новини | Національний природний парк Цуманська пуща</title>
+@stop
 @section('content')
 @if(count($first) != 0) <!--  перевірка чи є новини-->
 <div class="content">
