@@ -8,13 +8,21 @@
 @stop
 @section('content')
 @if($article!=null) <!--  перевірка чи є така стаття-->
+@if($article->url == "hist-cult" or $article->url == "rules")
+<div class="container" align="center">
+@else
 <div class="container" align="justify">
+@endif
 	<div class="rowcontent">
 		<div class="article">
 			<br>
 			<h3 class="titleh3" align="center">{{$article->title}}</h3>
 			<hr>
+			@if($article->url == "hist-cult" or $article->url == "rules")
+			<p align="center">{!!$article->text!!}</p>
+			@else
 			<p align="justify">{!!$article->text!!}</p>
+			@endif
 			<br>
 		</div>
 		<div class="row">
