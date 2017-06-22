@@ -10,11 +10,11 @@
 @if($new!=null) <!--  перевірка чи є новина-->
 <div class="container">
 	<div class="rowcontent">
-		<div class="article">
+		<div class="article" align="justify">
 			<br>
 			<h3 class="newtitle" align="center">{{$new->title}}</h3>
 			<hr>
-			<p align="justify">{!!$new->content!!}</p>
+			<p>{!!$new->content!!}</p>
 			<br>
 		</div>
 		<div class="row">

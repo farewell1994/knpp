@@ -14,11 +14,11 @@ $map = str_replace('width="600" height="450" frameborder="0" style="border:0"', 
 ?>
 <div class="container" align="justify">
 	<div class="rowcontent">
-		<div class="article">
+		<div class="article" align="justify">
 			<br>
 			<h3 class="titleh3" align="center">{{$tour->title}}</h3>
 			<hr>
-			<p align="justify">{!!$tour->text!!}</p>
+			<p>{!!$tour->text!!}</p>
 			<br>
 			{!!$map!!}
 			<br>
