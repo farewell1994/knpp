@@ -5,7 +5,6 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="icon" type="image/x-icon" href="../favicon.ico">
 		@yield('title')
-		<meta name="title" content="Національний природний парк Цуманська пуща"/>
 		<meta name="description" content="«Цуманська пуща - національний природний парк в Україні. Розташований у межах Ківерцівського району Волинської області, 
 		на території однойменного лісового масиву поблизу смт Цумань, в межиріччі Стиру та Горині.">
 		<meta name="keywords" content="Волинь, національний, природний, парк, Ківерці, Цумань, зубр, природа" />
@@ -20,8 +19,9 @@
 		<link rel='stylesheet' href="{{URL::asset('asset/font-awesome/css/font-awesome.min.css')}}">
 		<link rel="stylesheet" href="{{URL::asset('asset/gallery1/fancybox/jquery.fancybox.css')}}" type="text/css" media="screen" />
 	</head>
-
 	<body>
+	<div id="fb-root"></div>
+	<script type="text/javascript" src="{{URL::asset('asset/js/fb.js')}}"></script>
 		<div class="wrapper">
 			<header>
 				<div class="row">

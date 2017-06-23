@@ -2,6 +2,11 @@
 @section('title')
 @if(!empty($new->title))
 <title>{{$new->title}}</title>
+		<meta property="og:url"           content='{{"http://knpp.com.ua/public/".Request::path()}}' />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="{{$new->title}}" />
+		<meta property="og:description"   content="{{$new->description}}" />
+		<meta property="og:image"         content="{{ URL::asset('asset/images/cp.jpg')}}" />
 @else
 <title>Національний природний парк "Цуманська пуща"</title>
 @endif
@@ -17,6 +22,13 @@
 			<p>{!!$new->content!!}</p>
 			<br>
 		</div>
+		<div class = "row">
+			<div class="fb-share-button" data-href = "{{"http://knpp.com.ua/public/".Request::path()}}" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+				<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse">Поділитись
+				</a>
+			</div>
+		</div>
+			<br>
 		<div class="row">
 			<?php $imgs = explode('*',$new->links);?>
 			@if($imgs[0]!=null)

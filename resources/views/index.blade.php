@@ -8,7 +8,7 @@
 <!--слайди-->
 	<div class="carousel-inner">
 		<div class="item active">
-			<img src="{{URL::asset('asset/images/1.jpg')}}" alt="">
+			<img src="{{URL::asset('asset/images/1.jpg')}}">
 		</div>
 		<div class="item">
 			<img src="{{URL::asset('asset/images/2.jpg')}}">

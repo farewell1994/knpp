@@ -14,7 +14,7 @@ class NewsController extends Controller
 	return view('news', ['first' => $firstNews]);
 	}
 	public function pageNews($url){
-		$view = News::select('title', 'content', 'links')->where('url', '=', $url)->first();
+		$view = News::select('url', 'title', 'description', 'small_img', 'content', 'links')->where('url', '=', $url)->first();
 		return view('showNew', ['new'=> $view]);
 	}
 }
