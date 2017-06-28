@@ -131,6 +131,15 @@
 					 <h3>Сторінка видалена, переміщена, або ще не створена.</h3>
 					 <br>
 				</div>
+					<!--bigmir)net TOP 100-->
+				<div  class="counter" >
+					<script type="text/javascript" language="javascript" src="{{URL::asset('asset/js/bigmirBM_Draw.js')}}"></script>
+					<script type="text/javascript" language="javascript" src="{{URL::asset('asset/js/bigmir.js')}}"></script>
+					<noscript>
+					<a href="http://www.bigmir.net/" target="_blank"><img src="//c.bigmir.net/?v16950539&s16950539&t2" width="88" height="31" alt="bigmir)net TOP 100" title="bigmir)net TOP 100" border="0" /></a>
+					</noscript>
+					<!--bigmir)net TOP 100-->
+				</div>
 			</div>
 		</div>
 		<!--підвал-->
