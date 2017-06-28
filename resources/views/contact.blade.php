@@ -41,5 +41,14 @@
 	<div class="col-md-6 map">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.744997698103!2d25.459989651809813!3d50.833525554970315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472593ee7c34eca1%3A0xa712b4295baa790b!2z0LLRg9C70LjRhtGPINCd0LXQt9Cw0LvQtdC20L3QvtGB0YLRliwgMTgsINCa0ZbQstC10YDRhtGWLCDQktC-0LvQuNC90YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQ1MjAx!5e0!3m2!1sru!2sua!4v1483568132442" width="100%" height="563px" frameborder="0" style="border: 1px solid green" allowfullscreen></iframe>
 	</div>
+	<!--bigmir)net TOP 100-->
+	<div  class="counter" >
+		<script type="text/javascript" language="javascript" src="{{URL::asset('asset/js/bigmirBM_Draw.js')}}"></script>
+		<script type="text/javascript" language="javascript" src="{{URL::asset('asset/js/bigmir.js')}}"></script>
+		<noscript>
+		<a href="http://www.bigmir.net/" target="_blank"><img src="//c.bigmir.net/?v16950539&s16950539&t2" width="88" height="31" alt="bigmir)net TOP 100" title="bigmir)net TOP 100" border="0" /></a>
+		</noscript>
+		<!--bigmir)net TOP 100-->
+	</div>
 </div>
 @stop
