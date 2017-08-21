@@ -39,7 +39,7 @@
 	font-family: Arial, Times, Arial, sans-serif;
 }
 .socnet{
-	float:left; 
+	float:right; 
 	list-style-type: none;
 	margin-top:5px; 
 	padding-left:30px;
@@ -212,7 +212,9 @@ header{
 	/*text-align: justify;*/
 	}
 .article img{
-	max-width: 100%;
+	max-width: 100% !important;
+	height: auto !important;
+	text-align:center;
 }
 .active img{
 	width:100%;

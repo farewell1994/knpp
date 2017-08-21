@@ -31,14 +31,14 @@
 					</div>
 					<div class="col-md-3">
 						<div class="row">
-							<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+							<div class="col-xs-4 col-sm-6 col-md-12 col-lg-12">
 								<ul class="socnet" >
 									<li>
 										<a href="https://uk.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA_%C2%AB%D0%A6%D1%83%D0%BC%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D0%BF%D1%83%D1%89%D0%B0%C2%BB" class="Wikipedia" target="_blank">
 											<i class="fa fa-wikipedia-w fa-2x"></i>
 										</a>
 									</li>
-									<li>
+									<!-- li>
 										<a href="#" class="Twitter" target="_blank">
 											<i class="fa fa-twitter fa-2x"></i>
 										</a>
@@ -47,7 +47,7 @@
 										<a href="https://vk.com/tsumanska_pushcha" class="Google Plus" target="_blank">
 											<i class="fa fa-vk fa-2x"></i>
 										</a>
-									</li>
+									</li -->
 									<li>
 										<a href="https://www.facebook.com/npptsuman/" class="Facebook" target="_blank">
 											<i class="fa fa-facebook fa-2x"></i>
@@ -55,7 +55,7 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 input-group search-form">
+							<div class="col-xs-8 col-sm-6 col-md-12 col-lg-12 input-group search-form">
                                 {!! Form::open(array('method' => 'get', 'route' => 'search')) !!}
                                     {!! Form::text('search', null, array('class' => 'form-control searchform', 'autocomplete' => "off", 'placeholder' => 'Пошук. Введіть та натисніть Enter')) !!}
                                 {!! Form::close() !!}

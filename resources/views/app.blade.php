@@ -39,7 +39,7 @@
 														<i class="fa fa-wikipedia-w fa-2x"></i>
 													</a>
 												</li>
-												<li>
+												<!-- li>
 													<a href="#" class="Twitter" target="_blank">
 														<i class="fa fa-twitter fa-2x"></i>
 													</a>
@@ -48,7 +48,7 @@
 													<a href="https://vk.com/tsumanska_pushcha" class="Google Plus" target="_blank">
 														<i class="fa fa-vk fa-2x"></i>
 													</a>
-												</li>
+												</li -->
 												<li>
 													<a href="https://www.facebook.com/npptsuman/" class="Facebook" target="_blank">
 														<i class="fa fa-facebook fa-2x"></i>
