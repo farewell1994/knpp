@@ -111,6 +111,7 @@
 												<li><a href="{{ URL::to('article/interesting') }}">Цікаві об'єкти</a></li>
 												<li><a href="{{ URL::to('article/rules') }}">Правила поведінки</a></li>
 												<li><a href="{{URL::to('article/infrastr') }}">Туристична інфраструктура</a></li>
+												<li><a href="{{URL::to('article/events') }}">Наші заходи</a></li>
 											</ul>
 										</li>
 										<li><a href="{{ URL::to('gallery') }}">Галерея</a></li>
