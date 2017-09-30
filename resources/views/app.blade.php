@@ -82,12 +82,21 @@
 										<li><a href="{{ URL::to('home') }}">Головна</a></li>
 										<li><a href="{{ URL::to('news') }}">Новини</a></li>
 										<li  class="dropdown">
-											<a class="dropdown-toggle forcursor" data-toggle="dropdown">Про парк<b class="caret"></b></a>
-											<ul class="dropdown-menu">
+											<a class="forcursor" data-toggle="dropdown" id="dLabel" data-target="#" href="#">Про парк<b class="caret"></b></a>
+											<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
 												<li><a href="{{ URL::to('article/creating') }}">Історія створення</a></li>
 												<li><a href="{{ URL::to('article/fizgeo') }}">Фізико-географічні умови</a></li>
-												<li><a href="{{ URL::to('article/biodiv') }}">Біорізноманіття</a></li>
-												<li><a href="{{ URL::to('article/hist-cult') }}">Історико-культурна спадщина</a></li>
+											    <li><a href="{{ URL::to('article/biodiv') }}">Біорізноманіття</a></li>
+												<li class="dropdown-submenu"><a tabindex="-1" href="#">Історико культурна спадщина</a>
+													<ul class="dropdown-menu">
+                                                        <li><a tabindex="-1" href="{{ URL::to('view/ethnography') }}">Етнографія</a></li>
+                                                        <li><a href="{{ URL::to('view/archeology') }}">Археологічні пам'ятки</a></li>
+                                                        <li><a href="{{ URL::to('view/radzivill') }}">Спадщина Радзивіллів</a></li>
+														<li><a href="{{ URL::to('view/psv') }}">Перша світова війна</a></li>
+														<li><a href="{{ URL::to('view/dsv') }}">Друга світова війна</a></li>
+														<li><a href="{{ URL::to('view/upa') }}">Українська повстанська армія</a></li>
+                                                    </ul>
+												</li>
 												<li><a href="{{ URL::to('administration') }}">Адміністрація</a></li>
 												<li><a href="{{ URL::to('matherials') }}">Матеріали</a></li>
 												<li><a href="{{ URL::to('article/help') }}">Допомога</a></li>
