@@ -87,7 +87,7 @@
 												<li><a href="{{ URL::to('article/creating') }}">Історія створення</a></li>
 												<li><a href="{{ URL::to('article/fizgeo') }}">Фізико-географічні умови</a></li>
 											    <li><a href="{{ URL::to('article/biodiv') }}">Біорізноманіття</a></li>
-												<li class="dropdown-submenu"><a tabindex="-1" href="{{ URL::to('article/hist-cult') }}">Історико культурна спадщина</a>
+												<li class="dropdown-submenu"><a tabindex="-1">Історико культурна спадщина</a>
 													<ul class="dropdown-menu">
                                                         <li><a tabindex="-1" href="{{ URL::to('view/ethnography') }}">Етнографія</a></li>
                                                         <li><a href="{{ URL::to('view/archeology') }}">Археологічні пам'ятки</a></li>
