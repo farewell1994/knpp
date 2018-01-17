@@ -16,7 +16,84 @@
 	<div class="rowcontent">
 		<div class="article">
 			<br>
-			<h3 class="titleh3" align="center">{{$article->title}}</h3>
+			@if($article->url == "hist-cult")
+				<div class="row banner-content">
+				<div id="etno" class="col-sm-6 banner">
+					<div class="banner-image">
+						<a href="../view/ethnography">
+							<img src="../images/auto/74.jpg">
+						</a>
+					</div>
+					<div class="banner-capture">
+						<a href="../view/ethnography">
+							<p>Етнографія</p>
+						</a>
+					</div>
+				</div>
+				<div id="arch" class="col-sm-6 banner">
+					<div class="banner-image">
+						<a href="../view/archeology">
+							<img src="../images/auto/6.jpg">
+						</a>
+					</div>
+					<div class="banner-capture">
+						<a href="../view/ethnography">
+							<p>Археологічні<br> пам'ятки</p>
+						</a>
+					</div>
+				</div>
+				<div id="radz" class="col-sm-6 banner">
+					<div class="banner-image">
+						<a href="../view/radzivill">
+							<img src="../images/auto/9.jpg">
+						</a>
+					</div>
+					<div class="banner-capture">
+						<a href="../view/ethnography">
+							<p>Спадщина<br> Радзивіллів</p>
+						</a>
+					</div>
+				</div>
+				<div id="psv" class="col-sm-6 banner">
+					<div class="banner-image">
+						<a href="../view/psv">
+							<img src="../images/hist-cult/13.jpg">
+						</a>
+					</div>
+					<div class="banner-capture">
+						<a href="../view/ethnography">
+							<p>Перша <br>Світова війна</p>
+						</a>
+					</div>
+				</div>
+				<div id="dsv" class="col-sm-6 banner">
+					<div class="banner-image">
+						<a href="../view/dsv">
+							<img src="../images/hist-cult/20.jpg">
+						</a>
+					</div>
+					<div class="banner-capture">
+						<a href="../view/ethnography">
+							<p>Друга <br>Світова війна</p>
+						</a>
+					</div>
+				</div>
+				<div id="upa" class="col-sm-6 banner">
+					<div class="banner-image">
+						<a href="../view/upa">
+							<img src="../images/hist-cult/19.jpg">
+						</a>
+					</div>
+					<div class="banner-capture">
+						<a href="../view/ethnography">
+							<p>Українська<br> повстанська армія</p>
+						</a>
+					</div>
+				</div>
+				</div>
+				<hr>
+			@endif
+			<h3>{{$article->title}}</h3>
 			<hr>
 			@if($article->url == "hist-cult" or $article->url == "rules")
 			<p align="center">{!!$article->text!!}</p>
@@ -27,17 +104,29 @@
 		</div>
 		<div class="row">
 			<?php $imgs = explode('*',$article->links);?>
-			@if($imgs[0]!=null)
-			@foreach($imgs as $img)
-			<div class="col-xs-12 col-md-3 col-sm-6 thumb">
-				<a class="fancyimage" rel="group" href="{{$img}}">
-					<p>
-						<img class="img-responsive" src="{{$img}}" alt="Ooops... Зображення не завантажилось">
-					</p>
-				</a>
-			</div>
-			@endforeach
-			@endif
+				@if($imgs[0]!=null)
+					@foreach($imgs as $img)
+						<div class="col-xs-12 col-md-3 col-sm-6 thumb">
+							<a class="fancyimage" rel="group" href="{{$img}}">
+								<p>
+									<img class="img-responsive" src="{{$img}}" alt="Ooops... Зображення не завантажилось">
+								</p>
+							</a>
+						</div>
+					@endforeach
+				@else
+					@foreach($photos as $p)
+						@if($p->info())
+							<div class="col-xs-12 col-md-3 col-sm-6 thumb">
+								<a class="fancyimage" rel="group" href="../images/{{$p->getPath()}}">
+									<p>
+										<img class="img-responsive" src="../images/{{$p->getPath()}}" alt="Ooops... Зображення не завантажилось">
+									</p>
+								</a>
+							</div>
+						@endif
+					@endforeach
+				@endif
 		</div>		
 	</div>
 	<!--bigmir)net TOP 100-->

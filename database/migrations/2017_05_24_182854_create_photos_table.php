@@ -17,7 +17,7 @@ class CreatePhotosTable extends Migration
             $table->increments('id');
             $table->string('capture');
 			$table->text('link');
-			$table->integer('dif');
+			$table->string('dif');
         });
     }
 

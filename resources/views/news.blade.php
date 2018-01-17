@@ -10,13 +10,13 @@
 	<div class="container" align="justify">
 		<div class=row>
 		@foreach($first as $f)
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<div class="thumbnail" >
 					<img src="{{$f->small_img}}" alt='Ooops... Зображення не завантажилось' >
 						<div class="caption">
 							<h4 align="center">{{$f->title}}</h4>
 							<p>{{mb_substr($f->description, 0, 215)}}</p>					
-							<a href="{{URL::to('news/'.$f->url)}}" target="_blanc">Читати далі...</a>
+							<a class="btn btn-success" href="{{URL::to('news/'.$f->url)}}" target="_blanc">Читати далі...</a>
 						</div>
 				</div>
 			</div>

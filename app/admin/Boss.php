@@ -11,5 +11,5 @@ Admin::model(App\Boss::class)->title('Керівництво')->with()->filters(
 {
 	FormItem::text('position', 'Посада')->required();
 	FormItem::text('fio', 'ФІО')->required();
-	FormItem::text('photo', 'Посилання на фото.  Не обов\'язковий розділ');
+	FormItem::image('photo', 'Фото.  Не обов\'язкове');
 });

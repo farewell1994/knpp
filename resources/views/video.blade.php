@@ -4,7 +4,7 @@
 @stop
 @section('content')
 <h3>
-	<a class="gallerylinks" href="{{URL::to('gallery')}}">Світлини / </a>Відео
+	<a class="btn btn-default" href="{{URL::to('gallery')}}">Світлини</a> <p class="btn btn-success">Відео</p>
 </h3>
 <hr>
 @if(count($video) != 0) <!--  перевірка чи є відео-->
@@ -13,6 +13,11 @@
 		@foreach($video as $v)
 		<iframe class="youtube" width="85%" height="400px" src="https://www.youtube.com/embed/{{$v->link}}" frameborder="0" allowfullscreen></iframe>";
 		@endforeach
+			<div class="page" align="center">
+				<nav>
+					{!! $video->render() !!}
+				</nav>
+			</div>
 	</div>
 	<!--bigmir)net TOP 100-->
 	<div  class="counter" >

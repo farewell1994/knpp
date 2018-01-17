@@ -8,27 +8,42 @@
 		<br>
 		<h3> Ключ пошуку: <i>{{$key}}</i></h3>
 		<hr>
-		<h3> Знайдено новин: {{count($news)}}</h3>
+		<h3> Новини </h3>
 		<hr>
-		<ol class="math">
+		@if(count($news)>0)
+		<ul class="search-news">
 			@foreach($news as $n)
 			<li>
-				<a href="{{'news/'.$n->url}}" target="_blank">{{$n->title}}</a>
-				<br>
+				<p class="search_header">{{$n->title}}</p>
+				<p class="search_desc">{{$n->description}}</p>
+				<a class="btn btn-success btn-xs" href="{{'news/'.$n->url}}" target="_blank">Перейти до новини</a>
+				<hr>
 			</li>
 			@endforeach
-		</ol>
-		<h3> Знайдено статей: {{count($articles)}}</h3>
+		</ul>
+		@else
+			<p>Нічого не знайдено</p>
+		@endif
+		<div class="page" align="center">
+			<nav>
+				{!! $news->appends(['search' => $key])->render() !!}
+			</nav>
+		</div>
+		<h3> Статті </h3>
 		<hr>
-		<ol class="math">
+		@if(count($articles)>0)
+		<ul class="search-articles">
 			@foreach($articles as $a)
 			<li>
 				<a href="{{'article/'.$a->url}}" target="_blank">{{$a->title}}</a>
 				<br>
 			</li>
 			@endforeach
-		</ol>
+		</ul>
 		<br>
+		@else
+		<p>Нічого не знайдено</p>
+		@endif
 	</div>
 	<!--bigmir)net TOP 100-->
 	<div  class="counter" >

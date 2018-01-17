@@ -34,8 +34,8 @@ CKEDITOR.editorConfig = function (config) {
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 
-	CKEDITOR.config.simpleImageBrowserURL = '/images/all';
+	CKEDITOR.config.simpleImageBrowserURL = 'http://localhost/laravel/knpp/public/images/all';
 	CKEDITOR.config.language = window.admin.locale;
-	config.filebrowserImageUploadUrl = '/images/upload';
+	config.filebrowserImageUploadUrl = 'http://localhost/laravel/knpp/public/images/uploads';
 };
 

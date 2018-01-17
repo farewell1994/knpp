@@ -25,13 +25,27 @@ $map = str_replace('width="600" height="450" frameborder="0" style="border:0"', 
 		</div>
 		<div class="row">
 			@if($imgs[0]!=null)
-			@foreach($imgs as $img)
-			<div class="col-xs-12 col-md-3 col-sm-6 thumb">
-				<a class="fancyimage" rel="group" href="{{$img}}">
-					<p><img class="img-responsive" src="{{$img}}" alt="Ooops... Зображення не завантажилось"></p>
-				</a>
-			</div>
-			@endforeach
+				@foreach($imgs as $img)
+					<div class="col-xs-12 col-md-3 col-sm-6 thumb">
+						<a class="fancyimage" rel="group" href="{{$img}}">
+							<p>
+								<img class="img-responsive" src="{{$img}}" alt="Ooops... Зображення не завантажилось">
+							</p>
+						</a>
+					</div>
+				@endforeach
+			@else
+				@foreach($photos as $p)
+					@if($p->info())
+						<div class="col-xs-12 col-md-3 col-sm-6 thumb">
+							<a class="fancyimage" rel="group" href="../images/{{$p->getPath()}}">
+								<p>
+									<img class="img-responsive" src="../images/{{$p->getPath()}}" alt="Ooops... Зображення не завантажилось">
+								</p>
+							</a>
+						</div>
+					@endif
+				@endforeach
 			@endif
 		</div>
 	</div>
